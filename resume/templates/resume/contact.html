@@ -1,0 +1,65 @@
+{% extends "resume/base_4.html" %}
+
+{% block content %} 
+
+
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>get in <span>touch</span></h1>
+    <span class="title-bg">contact</span>
+</section>
+
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">            
+            <div class="col-12 col-lg-4">
+                <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Don't be shy !</h3>
+                <p class="open-sans-font mb-3">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                <p class="open-sans-font custom-span-contact position-relative">
+                    <i class="fa fa-envelope-open position-absolute"></i>
+                    <span class="d-block">mail me</span>cristiano.dev@outlook.pt
+                </p>
+                <p class="open-sans-font custom-span-contact position-relative">
+                    <i class="fa fa-phone-square position-absolute"></i>
+                    <span class="d-block">call me</span>+351 920 104 974
+                </p>
+                <ul class="social list-unstyled pt-1 mb-5">
+                    <li class="linkedin"><a title="linkedin" href="https://www.linkedin.com/in/cristiano-webdeveloper/"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li class="github"><a title="github" href="https://github.com/cristianosch"><i class="fa fa-github"></i></a>
+                    </li>
+                    <li class="youtube"><a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
+                    </li>
+                    <li class="dribbble"><a title="Dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-lg-8">
+                <form class="contactform" method="post" action="php/process-form.php">
+                    <div class="contactform">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <input type="text" name="name" placeholder="YOUR NAME">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <input type="email" name="email" placeholder="YOUR EMAIL">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <input type="text" name="subject" placeholder="YOUR SUBJECT">
+                            </div>
+                            <div class="col-12">
+                                <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+                                <button type="submit" class="btn btn-contact">Send Message</button>
+                            </div>
+                            <div class="col-12 form-message">
+                                <span class="output_message text-center font-weight-600 text-uppercase"></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+{% endblock content %}
